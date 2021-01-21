@@ -4,7 +4,7 @@ class ReplyKeyboards
   def initialize
     @book_genres = [%w[Novel Philosophy], %w[Poetry Theatre], %w[Science Children]]
     @novel_genres = [%w[Sci-Fi Terror], %w[Romantic Fantasy], %w[Historic Mystery]]
-    @moods = [%w[Sci-Fi Terror], %w[Romantic Fantasy], %w[Historic Mystery]]
+    @moods = [%w[Optimistic Pessimistic], %w[Anxious Creative], ['Angry', 'In love']]
   end
 
   def keyboard(array)

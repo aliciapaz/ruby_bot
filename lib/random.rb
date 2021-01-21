@@ -1,5 +1,6 @@
 class Random
-  attr_reader :sci_fi, :terror, :romantic, :fantasy, :historic, :mystery, :author, :title, :sentences
+  attr_reader :sci_fi, :terror, :romantic, :fantasy, :historic, :mystery, :philosophy, :poetry, :theatre, :science,
+              :children, :author, :title, :sentences
 
   def initialize
     @sci_fi = [
@@ -71,92 +72,91 @@ class Random
       { title: 'Dragonflight', author: 'Anne McCaffrey' }
     ]
     @historic = [
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' }
+      { title: 'Guns, Germs, and Steel: The Fate of Human Societies', author: 'Jared Diamond' },
+      { title: 'Genghis Khan and the Making of the Modern World', author: 'Jack Weatherford' },
+      { title: 'Leningrad: The Epic Siege of World War II, 1941-1944', author: 'Anna Reid' },
+      { title: 'The History of the Ancient World', author: 'Susan Wise Bauer' },
+      { title: 'Broken Lives: How Ordinary Germans Experienced the 20th Century', author: 'Konrad H. Jarausch' },
+      { title: 'Iran: A Modern History', author: 'Abbas Amanat' },
+      { title: 'The Gulf: The Making of an American Sea', author: 'Jack E. Davis' },
+      { title: 'Say Nothing: A True Story of Murder and Memory in Northern Ireland', author: 'Patrick Radden Keefe' },
+      { title: 'Open Veins of Latin America ', author: 'Eduardo Galeano' },
+      { title: 'The Little Red Guard', author: 'Wenguang Huang' },
+      { title: 'Eichmann in Jerusalem: A Report on the Banality', author: 'Hannah Arendt' },
+      { title: ' Games Without Rules: The Often-Interrupted History of Afghanistan', author: 'Tamim Ansary' },
+      { title: 'The Sea and Civilization: A Maritime History of the World', author: 'Lincoln Paine' },
+      { title: 'Headstrong – 52 Women Who Changed Science and the World', author: 'Rachel Swaby' },
+      { title: 'A Little History of the World', author: 'E.H. Gombrich' }
     ]
     @mystery = [
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' }
+      { title: 'And Then There Were None', author: 'Agatha Christie' },
+      { title: 'In Cold Blood', author: 'Truman Capote' },
+      { title: 'Woman in White', author: 'Wilkie Collins' },
+      { title: 'Anatomy of a Murder', author: 'Robert Traver' },
+      { title: 'Tinker, Tailor, Soldier, Spy ', author: 'John le Carré' },
+      { title: 'Rebecca', author: 'Daphne du Maurier' },
+      { title: 'The Silence of the Lambs ', author: 'Thomas Harris' },
+      { title: 'The Hound of the Baskervilles', author: 'Sir Arthur Conan Doyle' },
+      { title: 'The Girl on the Train', author: 'Paula Hawkins' },
+      { title: 'Eye of the Needle', author: 'Ken Follett' },
+      { title: 'Sharp Objects', author: 'Gillian Flynn' },
+      { title: 'The Alienist', author: 'Caleb Carr' },
+      { title: 'The Whistler', author: 'John Grisham' },
+      { title: 'The Daughter of Time', author: 'Josephine Tey' },
+      { title: 'The Godfather', author: 'Mario Puzo' }
     ]
 
     @philosophy = [
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' }
+      { title: 'Meditations', author: 'Marcus Aurelius' },
+      { title: 'Man’s Search for Meaning', author: 'Viktor Frankl' },
+      { title: 'Critique of Pure Reason', author: 'Emmanuel Kant' },
+      { title: 'Beyond Good And Evil', author: 'Nietzsche' },
+      { title: 'Meditations on First Philosophy', author: 'René Descartes' },
+      { title: 'The Prince', author: 'Niccolò Machiavelli' },
+      { title: 'Being and Nothingness', author: 'Jean-Paul Sartre' },
+      { title: 'The Myth Of Sisyphus and Other Essays', author: 'Albert Camus' },
+      { title: 'Tao Te Ching', author: 'Lao Tzu' },
+      { title: 'The Art of War', author: 'Sun Tzu' },
+      { title: 'The Book of Healing', author: 'Avicenna' },
+      { title: 'The Second Sex', author: 'Simone de Beauvoir' },
+      { title: 'Defiance', author: 'Savitri Devi' },
+      { title: 'The Virtue of Selfishness: A New Concept of Egoism', author: 'Ayn Rand' },
+      { title: 'The Ego and Its Own', author: 'Max Stirner' }
     ]
 
     @poetry = [
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' }
+      { title: 'The Book of Nightmares', author: 'Galway Kinnell' },
+      { title: 'Twenty Love Poems and a Song of Despair', author: 'Pablo Neruda' },
+      { title: 'Ariel', author: 'Sylvia Plath' },
+      { title: 'The Complete Poems', author: 'Emily Dickinson' },
+      { title: 'Mother Love', author: 'Rita Dove' },
+      { title: 'Where the Sidewalk Ends', author: 'Shel Silverstein' },
+      { title: 'Sinners Welcome', author: 'Mary Karr' },
+      { title: 'Leaves of Grass', author: 'Walt Whitman' },
+      { title: 'Dance Dance Revolution', author: 'Cathy Park Hong' },
+      { title: 'The Sonnets', author: 'William Shakespeare' },
+      { title: 'The Waste Land and Other Poems', author: 'T.S. Eliot' },
+      { title: 'The Essential Rumi', author: 'Rumi' },
+      { title: 'Stag’s Leap', author: 'Sharon Olds' },
+      { title: 'Sonnets to Orpheus', author: 'Rainer Maria Rilke' },
+      { title: 'What the Living Do', author: 'Marie Howe' }
     ]
 
     @theatre = [
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' }
+      { title: 'Hamlet', author: 'William Shakespeare ' },
+      { title: 'Death of a Salesman', author: 'Arthur Miller' },
+      { title: 'Oedipus Rex', author: 'Sophocles ' },
+      { title: 'Angels in America', author: 'Tony Kushner' },
+      { title: 'A Raisin in the Sun', author: 'Lorraine Hansberry' },
+      { title: 'Woyzeck', author: 'Georg Büchner' },
+      { title: 'Waiting for Godot', author: 'Samuel Beckett' },
+      { title: 'The Bald Soprano', author: 'Eugene Ionesco' },
+      { title: 'Hedda Gabler', author: 'Henrik Ibsen' },
+      { title: 'Machinal', author: 'Sophie Treadwell' },
+      { title: 'Uncle Vanya', author: 'Anton Chekhov' },
+      { title: 'Tartuffe', author: 'Moliere' },
+      { title: 'What the Butler Saw', author: 'Joe Orton' },
+      { title: 'Uncommon Women and Others', author: 'Wendy Wasserstein' }
     ]
 
     @science = [
@@ -219,4 +219,4 @@ class Random
 end
 
 random = Random.new
-puts random.recommendation(random.fantasy, random.sentences)
+puts random.recommendation(random.historic, random.sentences)
