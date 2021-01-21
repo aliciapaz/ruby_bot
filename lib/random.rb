@@ -160,21 +160,21 @@ class Random
     ]
 
     @science = [
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' }
+      { title: 'The Cosmic Connection', author: 'Carl Sagan' },
+      { title: 'Silent Spring ', author: 'Rachel Carson' },
+      { title: 'The Mismeasure of Man', author: 'Stephen Jay Gould' },
+      { title: 'Gaia', author: 'James Lovelock' },
+      { title: 'Under a Lucky Star', author: 'Roy Chapman Andrews' },
+      { title: 'The Feynman Lectures on Physics', author: 'Richard P. Feynman, Robert B. Leighton, and Matthew Sands' },
+      { title: 'A Brief History of Time', author: 'Stephen Hawking' },
+      { title: 'Being Mortal: Medicine and What Matters in the End', author: 'Atul Gawande' },
+      { title: 'The Immortal Life of Henrietta Lacks', author: 'Rebecca Skloot' },
+      { title: 'Sapiens: A Brief History of Humankind', author: 'Yuvol Noah Harari' },
+      { title: 'The Emperor of All Maladies: A Biography of Cancer', author: 'Siddhartha Mukherjee' },
+      { title: 'Homo Deus: A Brief History of Tomorrow', author: 'Yuval Noah Harari' },
+      { title: 'The Dreamt Land', author: 'Mark Arax' },
+      { title: 'Invisible Women', author: 'Caroline Criado Perez' },
+      { title: 'Midnight in Chernobyl', author: 'Adam Higginbotham' }
     ]
 
     @children = [
@@ -184,15 +184,15 @@ class Random
       { title: 'Ozma of Oz', author: 'Frank Baum ' },
       { title: 'The Lion, the Witch and the Wardrobe ', author: 'C.S. Lewis ' },
       { title: 'The Voyage of the Dawn Treader', author: 'C.S. Lewis' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' },
-      { title: '', author: '' }
+      { title: 'The Cat in the Hat ', author: 'Dr. Seuss' },
+      { title: 'Goodnight Moon', author: 'Margaret Wise Brown' },
+      { title: 'Momo', author: 'Michael Ende' },
+      { title: 'Charlie and the Chocolate Factory', author: 'Roald Dahl' },
+      { title: 'Anne of Green Gables', author: 'Lucy Maud Montgomery' },
+      { title: 'Harry Potter and the Chamber of Secrets', author: 'J. K. Rowling' },
+      { title: 'The Little Prince', author: 'Antoine de Saint-Exupéry' },
+      { title: 'Where the Wild Things Are', author: 'Maurice Sendak' },
+      { title: 'Black Beauty', author: 'Anna Sewell' }
     ]
 
     @sentences = [
