@@ -7,11 +7,27 @@ require_relative '../lib/reply_keyboards'
 require_relative '../lib/messages'
 
 config = AppConfigurator.new
+msg = Messages.new
+keyboard = ReplyKeyboards.new
 
 token = config.token
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
-    bot.api.send_message(chat_id: message.chat.id, text: "Welcome, I'm Fritz the librarian Bot")
+    case message.text
+    when '/start'
+      bot.api.send_message(chat_id: message.chat.id, text: msg.messages['welcome_message'])
+    when '/book'
+      bot.api.send_message(chat_id: message.chat.id, text: msg.messages['ask_book'],
+                           reply_markup: keyboard.keyboard(keyboard.book_genres))
+    when 'Novel'
+      bot.api.send_message(chat_id: message.chat.id, text: msg.messages['ask_book'],
+                           reply_markup: keyboard.keyboard(keyboard.novel_genres))
+
+    when '/quote'
+      bot.api.send_message(chat_id: message.chat.id, text: msg.messages['ask_mood'])
+    else
+      bot.api.send_message(chat_id: message.chat.id, text: msg.messages['wrong_input'])
+    end
   end
 end

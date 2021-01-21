@@ -1,6 +1,7 @@
+require 'telegram/bot'
+
 require_relative '../lib/reply_keyboards'
 require_relative '../lib/messages'
-
 
 describe Messages do
   msg = Messages.new
@@ -11,12 +12,13 @@ describe Messages do
   end
 end
 
-# describe ReplyKeyboards do
-#   array = %w[Sci Fi Terror Fantasy]
-#   my_keyboard = ReplyKeyboards.new(array)
-#   describe '#gkeyboard' do
-#     it 'returns an array of reply keyboard' do
-#       expect(my_keyboard.keyboard).to eq ['Sci Fi', 'Terror', 'Fantasy']
-#     end
-#   end
-# end
+describe ReplyKeyboards do
+  test_array = %w[one two three]
+  test_keyboard = ReplyKeyboards.new
+  describe '#keyboard(array)' do
+    it 'returns an array of reply keyboard' do
+      expect((test_keyboard.keyboard(test_array)).to eq ([["one"], ["two"], ["three"]])
+    end
+  end
+end
+

@@ -1,13 +1,17 @@
 class ReplyKeyboards
-  def initialize(array)
-    @array = array
+  attr_reader :book_genres, :novel_genres, :moods
+
+  def initialize
+    @book_genres = [%w[Novel Philosophy], %w[Poetry Theatre], %w[Science Children]]
+    @novel_genres = [%w[Sci-Fi Terror], %w[Romantic Fantasy], %w[Historic Mystery]]
+    @moods = [%w[Sci-Fi Terror], %w[Romantic Fantasy], %w[Historic Mystery]]
   end
 
-  def keyboard
-    Telegram::Bot::Types::ReplyKeyboardMarkup
-      .new(keyboard: array.each_slice(1).to_a, one_time_keyboard: true)
+  def keyboard(array)
+    Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: array, one_time_keyboard: true)
   end
 end
 
-# general_genres = ReplyKeyboards.new([%w[Novel Philosophy], %w[Poetry Theatre], %w[Science Children]]).get_keyboard
-# novel_genres = ReplyKeyboards.new([%w[Sci-Fi Terror], %w[Romantic Fantasy], %w[Historic Mystery]]).get_keyboard
+n_array = %w[one two three]
+test_keyboard = ReplyKeyboards.new
+p test_keyboard.keyboard(n_array)
