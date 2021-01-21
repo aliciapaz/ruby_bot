@@ -1,2 +1,2 @@
 .token.yml
-fritz_spec.rb
+spec/token_spec.rb

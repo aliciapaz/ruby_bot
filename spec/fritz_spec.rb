@@ -1,16 +1,6 @@
-require_relative '../lib/app_configurator'
 require_relative '../lib/reply_keyboards'
 require_relative '../lib/messages'
 
-describe AppConfigurator do
-  configuration = AppConfigurator.new
-
-  describe '#get_token' do
-    it 'returns bot token' do
-      expect(configuration.token).to eq('1421884274:AAE20q-0ohSKN8h2PNYOblp3C8CLYTXzwzA')
-    end
-  end
-end
 
 describe Messages do
   msg = Messages.new
