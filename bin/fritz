@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# rubocop:disable Metrics/BlockLength
+
 require 'telegram/bot'
 
 require_relative '../lib/app_configurator'
@@ -60,3 +62,5 @@ Telegram::Bot::Client.run(token) do |bot|
     end
   end
 end
+
+# rubocop:enable Metrics/BlockLength

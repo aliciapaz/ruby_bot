@@ -1,3 +1,5 @@
+# rubocop:disable Metrics/ClassLength, Metrics/MethodLength
+
 class Random
   attr_reader :sci_fi, :terror, :romantic, :fantasy, :historic, :mystery, :philosophy, :poetry, :theatre, :science,
               :children, :author, :title, :sentences
@@ -35,7 +37,7 @@ class Random
       { title: 'At the Mountains of Madness', author: 'H. P. Lovecraft ' },
       { title: 'The Bad Seed', author: 'William March' },
       { title: 'The Haunting of Hill House', author: 'Shirley Jackson' },
-      { title: 'Psycho', author: 'Robert Bloch' },
+      { title: 'Psycho', author: 'Robert Bloch' }
     ]
     @romantic = [
       { title: 'Pride and Prejudice', author: 'Jane Austen' },
@@ -218,5 +220,4 @@ class Random
   end
 end
 
-random = Random.new
-puts random.recommendation(random.historic, random.sentences)
+# rubocop:enable Metrics/ClassLength, Metrics/MethodLength
