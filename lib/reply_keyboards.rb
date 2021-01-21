@@ -11,7 +11,3 @@ class ReplyKeyboards
     Telegram::Bot::Types::ReplyKeyboardMarkup.new(keyboard: array, one_time_keyboard: true)
   end
 end
-
-n_array = %w[one two three]
-test_keyboard = ReplyKeyboards.new
-p test_keyboard.keyboard(n_array)
