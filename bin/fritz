@@ -1,7 +1,14 @@
 #!/usr/bin/env ruby
 
 require 'telegram/bot'
+
 require_relative '../lib/app_configurator'
+require_relative '../lib/reply_keyboards'
+require_relative '../lib/messages'
+
+config = AppConfigurator.new
+
+token = config.token
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|

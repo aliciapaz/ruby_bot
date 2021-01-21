@@ -1,5 +1,7 @@
 require 'yaml'
 
-def token
-  YAML.safe_load(IO.read('../.token.yml'))['telegram_bot_token']
+class AppConfigurator
+  def token
+    YAML.safe_load(IO.read('.token.yml'))['telegram_bot_token']
+  end
 end
