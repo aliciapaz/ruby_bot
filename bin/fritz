@@ -32,7 +32,8 @@ Telegram::Bot::Client.run(token) do |bot|
       bot.api.send_message(chat_id: message.chat.id, text: random.recommendation(random.sci_fi, random.sentences))
     when 'Terror'
       bot.api.send_message(chat_id: message.chat.id, text: random.recommendation(random.terror, random.sentences))
-    # when 'Romantic'
+    when 'Romantic'
+      bot.api.send_message(chat_id: message.chat.id, text: random.recommendation(random.romantic, random.sentences))
     # when 'Fantasy'
     # when 'Historic'
     # when 'Mystery'

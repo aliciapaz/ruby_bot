@@ -37,7 +37,23 @@ class Random
       { title: 'Psycho', author: 'Robert Bloch' },
       { title: 'We Have Always Lived in the Castle', author: 'Shirley Jackson' }
     ]
-    @romantic = {}
+    @romantic = [
+      { title: 'Pride and Prejudice', author: 'Jane Austen' },
+      { title: 'The Thorn Birds ', author: 'Colleen McCullough' },
+      { title: 'Outlander ', author: 'Diana Gabaldon' },
+      { title: 'Wuthering Heights', author: 'Emily Brontë' },
+      { title: 'Love in the Time of Cholera', author: 'Gabriel Garcia Márquez' },
+      { title: 'A Farewell to Arms', author: 'Ernest Hemingway' },
+      { title: 'The Light We Lost', author: 'Jill Santopolo' },
+      { title: 'Anna Karenina', author: 'Leo Tolstoy' },
+      { title: 'Great Expectations', author: 'Charles Dickens' },
+      { title: 'The Sun Is Also a Star', author: 'Nicola Yoon' },
+      { title: 'The Great Gatsby', author: 'F. Scott Fitzgerald' },
+      { title: 'The Summer Wives ', author: 'Beatriz Williams' },
+      { title: 'The Remains of the Day', author: 'Kazuo Ishiguro' },
+      { title: 'Norwegian Wood ', author: 'Haruki Murakami' },
+      { title: 'Dr. Zhivago', author: 'Boris Pasternak' }
+    ]
     @fantasy = {}
     @historic = {}
     @mystery = {}
@@ -64,5 +80,5 @@ class Random
   end
 end
 
-# random = Random.new
-# puts random.recommendation(random.terror, random.sentences)
+random = Random.new
+puts random.recommendation(random.romantic, random.sentences)
