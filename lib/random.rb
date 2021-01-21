@@ -35,7 +35,6 @@ class Random
       { title: 'The Bad Seed', author: 'William March' },
       { title: 'The Haunting of Hill House', author: 'Shirley Jackson' },
       { title: 'Psycho', author: 'Robert Bloch' },
-      { title: 'We Have Always Lived in the Castle', author: 'Shirley Jackson' }
     ]
     @romantic = [
       { title: 'Pride and Prejudice', author: 'Jane Austen' },
@@ -54,9 +53,148 @@ class Random
       { title: 'Norwegian Wood ', author: 'Haruki Murakami' },
       { title: 'Dr. Zhivago', author: 'Boris Pasternak' }
     ]
-    @fantasy = {}
-    @historic = {}
-    @mystery = {}
+    @fantasy = [
+      { title: 'The Lord Of The Rings', author: 'J.R.R. Tolkien' },
+      { title: 'The Name Of The Wind', author: 'Patrick Rothfuss' },
+      { title: 'Alice’s Adventures in Wonderland', author: 'Lewis Carroll' },
+      { title: 'The Blue Sword', author: ' Robin McKinley' },
+      { title: 'The Song of Achilles ', author: 'Madeline Miller' },
+      { title: 'Circe', author: 'Madeline Miller ' },
+      { title: 'Woven in Moonlight', author: 'Isabel Ibañez' },
+      { title: 'The Palm-Wine Drinkard ', author: 'Amos Tutuola ' },
+      { title: 'My Life in the Bush of Ghosts', author: 'Amos Tutuola' },
+      { title: 'A Hero Born ', author: ' Jin Yong' },
+      { title: 'Assassin’s Apprentice', author: 'Robin Hobb' },
+      { title: 'The Bear and the Nightingale', author: 'Katherine Arden' },
+      { title: 'The Broken Crown', author: 'Michelle West' },
+      { title: 'City of Stairs', author: ' Robert Jackson Bennett' },
+      { title: 'Dragonflight', author: 'Anne McCaffrey' }
+    ]
+    @historic = [
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' }
+    ]
+    @mystery = [
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' }
+    ]
+
+    @philosophy = [
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' }
+    ]
+
+    @poetry = [
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' }
+    ]
+
+    @theatre = [
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' }
+    ]
+
+    @science = [
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' }
+    ]
+
+    @children = [
+      { title: 'Mary Poppins', author: 'P.L. Travers' },
+      { title: 'The Phantom Tollbooth ', author: 'Norton Juster' },
+      { title: 'A Wizard of Earthsea', author: 'Ursula K. Le Guin' },
+      { title: 'Ozma of Oz', author: 'Frank Baum ' },
+      { title: 'The Lion, the Witch and the Wardrobe ', author: 'C.S. Lewis ' },
+      { title: 'The Voyage of the Dawn Treader', author: 'C.S. Lewis' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' },
+      { title: '', author: '' }
+    ]
+
     @sentences = [
       'Hhhhmmm...Interesting choice. You should definately read',
       'Good choice! I think you will enjoy',
@@ -81,4 +219,4 @@ class Random
 end
 
 random = Random.new
-puts random.recommendation(random.romantic, random.sentences)
+puts random.recommendation(random.fantasy, random.sentences)
