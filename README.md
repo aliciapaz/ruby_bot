@@ -3,7 +3,7 @@
 # Ruby Capstone Project
 ## Fritz The Librarian Bot
 
-> This is a Telegram Bot that recommends books of a chosen genre and sends random quotes according to the user's mood.
+> A Telegram Bot that recommends books of a chosen genre and sends random quotes according to the user's mood.
 
 ![screenshot](./Screenshot1.png)
 ![screenshot](./Screenshot2.png)
@@ -20,7 +20,7 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
