@@ -17,7 +17,9 @@ GEM
     faraday-net_http (1.0.1)
     ice_nine (0.11.2)
     inflecto (0.0.2)
+    json (2.5.1)
     multipart-post (2.1.1)
+    net-http-persistent (2.9.4)
     ruby2_keywords (0.0.4)
     telegram-bot-ruby (0.14.0)
       faraday
@@ -34,6 +36,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  json
+  net-http-persistent (~> 2.9)
   telegram-bot-ruby
 
 BUNDLED WITH
