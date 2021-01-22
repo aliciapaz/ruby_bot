@@ -21,6 +21,12 @@ describe ReplyKeyboards do
       expect(test_keyboard.keyboard(test_array).keyboard).to eq([['one'], ['two'], ['three']])
     end
   end
+
+  describe '#keyboard(number)' do
+    it 'returns an array of reply keyboard with no selection option' do
+      expect(test_keyboard.keyboard(1).selective).to eq(false)
+    end
+  end
 end
 
 describe Random do

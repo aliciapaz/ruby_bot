@@ -8,6 +8,10 @@
 ![screenshot](./Screenshot1.png)
 ![screenshot](./Screenshot2.png)
 
+## Demo Link
+
+[Demo Video](https://www.loom.com/share/cde0216e533b4a53b41d1427ac62b0f9)
+
 Additional description about the project and its features.
 
 ## Built With
@@ -41,7 +45,8 @@ To get a local copy up and running follow these simple steps.
 - Click on the Start button or type `/start` to initialize the bot.
 - Type `/book` to get a recommendation of a book. You can choose from the genres listed: Novel, Philosophy, Poetry, Theatre, Science or Children
 - Type `/quote` to get a random quote according to your mood
-- Type `/help` to see the list of available commands.
+- Type `/help` to see the list of available commands
+- Use CTRL + C in your terminal to stop the bot 
 
 ### Run tests
 
