@@ -2,7 +2,7 @@
 
 class Random
   attr_reader :sci_fi, :terror, :romantic, :fantasy, :historic, :mystery, :philosophy, :poetry, :theatre, :science,
-              :children, :author, :title, :sentences
+              :children, :author, :title, :sentences, :optimistic, :pessimistic, :anxious, :creative, :angry, :in_love
 
   def initialize
     @sci_fi = [
@@ -202,6 +202,43 @@ class Random
       'Good choice! I think you will enjoy',
       'Let me see...Got it! I recommend you to read'
     ]
+    # rubocop:disable Layout/LineLength
+    @optimistic = [
+      'The Inspiration you seek is already within you. Be silent and listen.~ Rumi',
+      'The only thing that makes life possible is permanent, intolerable uncertainty; not knowing what comes next. ~ Ursula K. Le Guin',
+      'It is very simple to be happy, but it is very difficult to be simple.~ Rabindranath Tagore'
+    ]
+
+    @pessimistic = [
+      "Always remember you are braver than you believe, stronger than you seem, smarter than you think and twice as beautiful as you'd ever imagined. Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.~ Rumi",
+      'And those who were seen dancing were thought to be insane by those who could not hear the music.~ Friedrich Nietzsche',
+      'Love your suffering. Do not resist it, do not flee from it. It is only your aversion to it that hurts, nothing else.~ Hermann Hesse'
+    ]
+
+    @anxious = [
+      'If a thing is worth doing, it is worth doing well. If it is worth having, it is worth waiting for. If it is worth attaining, it is worth fighting for. If it is worth experiencing, it is worth putting aside time for.~ Oscar Wilde',
+      'Forces beyond your control can take away everything you possess except one thing, your freedom to choose how you will respond to the situation.~ Viktor E. Frankl',
+      'Within you there is a stillness and sanctuary to which you can retreat at any time and be yourself.~ Hermann Hesse'
+    ]
+
+    @creative = [
+      'The quieter we become, the more we can hear.~ Rumi',
+      'You shall create beauty not to excite the senses but to give sustenance to the soul.~ Gabriela Mistral',
+      'In life learn art, in the artwork learn life. If you see the one correctly you see the other also.~ Friedrich Holderlin'
+    ]
+
+    @angry = [
+      'Whoever is a complete person does not need to be an authority.~ Max Stirner',
+      'Life is a sum of all your choices". So, what are you doing today? .~ Albert Camus',
+      'Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom.~ Viktor E. Frankl'
+    ]
+
+    @in_love = [
+      'Love is the kiss in the quiet nest while the leaves are trembling, mirrored in the water.~ Federico Garcia Lorca',
+      'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.~ Lao Tzu',
+      'Beauty is simply reality seen with the eyes of love.~ Rabindranath Tagore'
+    ]
+    # rubocop:enable Layout/LineLength
   end
 
   def random_book(input)
@@ -217,6 +254,10 @@ class Random
 
   def recommendation(genre, sent)
     "#{random_sentence(sent)} #{random_book(genre)}"
+  end
+
+  def random_quote(mood)
+    mood[rand(0..2)]
   end
 end
 

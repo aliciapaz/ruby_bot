@@ -42,4 +42,10 @@ describe Random do
       expect(random.recommendation(random.terror, random.sentences).class).to eq(String)
     end
   end
+
+  describe '#random_quote' do
+    it 'returns a string containing a random quote' do
+      expect(random.random_quote(random.angry).class).to eq(String)
+    end
+  end
 end

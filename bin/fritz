@@ -57,6 +57,18 @@ Telegram::Bot::Client.run(token) do |bot|
       bot.api.send_message(chat_id: message.chat.id, text: random.recommendation(random.science, random.sentences))
     when 'Children'
       bot.api.send_message(chat_id: message.chat.id, text: random.recommendation(random.children, random.sentences))
+    when 'Optimistic'
+      bot.api.send_message(chat_id: message.chat.id, text: random.random_quote(random.optimistic))
+    when 'Pessimistic'
+      bot.api.send_message(chat_id: message.chat.id, text: random.random_quote(random.pessimistic))
+    when 'Anxious'
+      bot.api.send_message(chat_id: message.chat.id, text: random.random_quote(random.anxious))
+    when 'Creative'
+      bot.api.send_message(chat_id: message.chat.id, text: random.random_quote(random.creative))
+    when 'Angry'
+      bot.api.send_message(chat_id: message.chat.id, text: random.random_quote(random.angry))
+    when 'In love'
+      bot.api.send_message(chat_id: message.chat.id, text: random.random_quote(random.in_love))
     else
       bot.api.send_message(chat_id: message.chat.id, text: msg.messages['wrong_input'])
     end
