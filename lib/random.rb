@@ -278,6 +278,8 @@ class Random
   end
   # rubocop:enable Layout/LineLength
 
+  private
+
   def random_book(input)
     index = rand(0..14)
     @author = input[index][:author]
@@ -288,6 +290,8 @@ class Random
   def random_sentence(input)
     input[rand(0..2)]
   end
+
+  public
 
   def recommendation(genre, sent)
     "#{random_sentence(sent)} #{random_book(genre)}"

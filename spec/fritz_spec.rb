@@ -100,18 +100,6 @@ describe Random do
     end
   end
 
-  describe '#random_book' do
-    it 'returns a string containing title and author of a random book' do
-      expect(random.random_book(random.sci_fi).class).to eq(String)
-    end
-  end
-
-  describe '#random_sentence' do
-    it 'returns a string containing a random sentence' do
-      expect(random.random_sentence(random.sentences).class).to eq(String)
-    end
-  end
-
   describe '#recommendation' do
     it 'returns a string containing a recommendation of a book' do
       expect(random.recommendation(random.terror, random.sentences).class).to eq(String)
