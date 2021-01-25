@@ -5,14 +5,18 @@
 
 > A Telegram Bot that recommends books of a chosen genre and sends random quotes according to the user's mood.
 
+### Why a librarian bot?
+> Nowadays, many people would rather look at memes on instagram than take the time to sit down and enjoy a good read.
+Perhaps in a few years, human librarians will no longer exist, as everything will be fully automated. 
+As a friendly reminder for children and adults, the librarian bot is the ideal synthesis between modern technologies and old habits that should not be lost.
+
 ![screenshot](./Screenshot1.png)
 ![screenshot](./Screenshot2.png)
 
-## Demo Link
+## Demo Video
 
-[Demo Video](https://www.loom.com/share/cde0216e533b4a53b41d1427ac62b0f9)
+Watch a video demo [HERE](https://www.loom.com/share/cde0216e533b4a53b41d1427ac62b0f9)
 
-Additional description about the project and its features.
 
 ## Built With
 
@@ -35,9 +39,14 @@ To get a local copy up and running follow these simple steps.
 
 ### Install
 
-- Open a terminal (CTRL + ALT + T) and clone the repository of the project
-- `cd` to the cloned repository
-- type `fritz` to run the executable file
+#### Clone the repository
+- Click on the "code" button above in this page and copy the link of the repository
+- Open a terminal (CTRL + ALT + T), type `git clone` and paste the link you copied in the previous step, then hit Enter
+- Go to the cloned repository using `cd` command
+
+#### Setup
+- Run `bundle install` to install the required gems in your computer
+- From within the directory of the project, type `fritz` to run the exectuable file and hit Enter
 
 ### Usage
 
