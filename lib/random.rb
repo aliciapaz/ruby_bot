@@ -1,10 +1,7 @@
-# rubocop:disable Metrics/ClassLength, Metrics/MethodLength
+# rubocop:disable Metrics/ClassLength
 
 class Random
-  attr_reader :sci_fi, :terror, :romantic, :fantasy, :historic, :mystery, :philosophy, :poetry, :theatre, :science,
-              :children, :author, :title, :sentences, :optimistic, :pessimistic, :anxious, :creative, :angry, :in_love
-
-  def initialize
+  def sci_fi
     @sci_fi = [
       { title: 'Dune', author: 'Frank Herbert' },
       { title: 'Foundation', author: 'Isaac Asimov' },
@@ -22,6 +19,9 @@ class Random
       { title: '20,000 Leagues Under the Sea', author: 'Jules Verne' },
       { title: 'Ready Player One', author: 'Ernest Cline' }
     ]
+  end
+
+  def terror
     @terror = [
       { title: 'Frankenstein', author: 'Mary Shelley' },
       { title: 'It', author: 'Stephen King' },
@@ -39,6 +39,9 @@ class Random
       { title: 'The Haunting of Hill House', author: 'Shirley Jackson' },
       { title: 'Psycho', author: 'Robert Bloch' }
     ]
+  end
+
+  def romantic
     @romantic = [
       { title: 'Pride and Prejudice', author: 'Jane Austen' },
       { title: 'The Thorn Birds ', author: 'Colleen McCullough' },
@@ -56,6 +59,9 @@ class Random
       { title: 'Norwegian Wood ', author: 'Haruki Murakami' },
       { title: 'Dr. Zhivago', author: 'Boris Pasternak' }
     ]
+  end
+
+  def fantasy
     @fantasy = [
       { title: 'The Lord Of The Rings', author: 'J.R.R. Tolkien' },
       { title: 'The Name Of The Wind', author: 'Patrick Rothfuss' },
@@ -73,6 +79,9 @@ class Random
       { title: 'City of Stairs', author: ' Robert Jackson Bennett' },
       { title: 'Dragonflight', author: 'Anne McCaffrey' }
     ]
+  end
+
+  def historic
     @historic = [
       { title: 'Guns, Germs, and Steel: The Fate of Human Societies', author: 'Jared Diamond' },
       { title: 'Genghis Khan and the Making of the Modern World', author: 'Jack Weatherford' },
@@ -90,6 +99,9 @@ class Random
       { title: 'Headstrong – 52 Women Who Changed Science and the World', author: 'Rachel Swaby' },
       { title: 'A Little History of the World', author: 'E.H. Gombrich' }
     ]
+  end
+
+  def mystery
     @mystery = [
       { title: 'And Then There Were None', author: 'Agatha Christie' },
       { title: 'In Cold Blood', author: 'Truman Capote' },
@@ -107,7 +119,9 @@ class Random
       { title: 'The Daughter of Time', author: 'Josephine Tey' },
       { title: 'The Godfather', author: 'Mario Puzo' }
     ]
+  end
 
+  def philosophy
     @philosophy = [
       { title: 'Meditations', author: 'Marcus Aurelius' },
       { title: 'Man’s Search for Meaning', author: 'Viktor Frankl' },
@@ -125,7 +139,9 @@ class Random
       { title: 'The Virtue of Selfishness: A New Concept of Egoism', author: 'Ayn Rand' },
       { title: 'The Ego and Its Own', author: 'Max Stirner' }
     ]
+  end
 
+  def poetry
     @poetry = [
       { title: 'The Book of Nightmares', author: 'Galway Kinnell' },
       { title: 'Twenty Love Poems and a Song of Despair', author: 'Pablo Neruda' },
@@ -143,7 +159,9 @@ class Random
       { title: 'Sonnets to Orpheus', author: 'Rainer Maria Rilke' },
       { title: 'What the Living Do', author: 'Marie Howe' }
     ]
+  end
 
+  def theatre
     @theatre = [
       { title: 'Hamlet', author: 'William Shakespeare ' },
       { title: 'Death of a Salesman', author: 'Arthur Miller' },
@@ -160,7 +178,9 @@ class Random
       { title: 'What the Butler Saw', author: 'Joe Orton' },
       { title: 'Uncommon Women and Others', author: 'Wendy Wasserstein' }
     ]
+  end
 
+  def science
     @science = [
       { title: 'The Cosmic Connection', author: 'Carl Sagan' },
       { title: 'Silent Spring ', author: 'Rachel Carson' },
@@ -178,7 +198,9 @@ class Random
       { title: 'Invisible Women', author: 'Caroline Criado Perez' },
       { title: 'Midnight in Chernobyl', author: 'Adam Higginbotham' }
     ]
+  end
 
+  def children
     @children = [
       { title: 'Mary Poppins', author: 'P.L. Travers' },
       { title: 'The Phantom Tollbooth ', author: 'Norton Juster' },
@@ -196,50 +218,65 @@ class Random
       { title: 'Where the Wild Things Are', author: 'Maurice Sendak' },
       { title: 'Black Beauty', author: 'Anna Sewell' }
     ]
+  end
 
+  def sentences
     @sentences = [
       'Hhhhmmm...Interesting choice. You should definately read',
       'Good choice! I think you will enjoy',
       'Let me see...Got it! I recommend you to read'
     ]
-    # rubocop:disable Layout/LineLength
+  end
+
+  # rubocop:disable Layout/LineLength
+  def optimistic
     @optimistic = [
       'The Inspiration you seek is already within you. Be silent and listen.~ Rumi',
       'The only thing that makes life possible is permanent, intolerable uncertainty; not knowing what comes next. ~ Ursula K. Le Guin',
       'It is very simple to be happy, but it is very difficult to be simple.~ Rabindranath Tagore'
     ]
+  end
 
+  def pessimistic
     @pessimistic = [
       "Always remember you are braver than you believe, stronger than you seem, smarter than you think and twice as beautiful as you'd ever imagined. Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.~ Rumi",
       'And those who were seen dancing were thought to be insane by those who could not hear the music.~ Friedrich Nietzsche',
       'Love your suffering. Do not resist it, do not flee from it. It is only your aversion to it that hurts, nothing else.~ Hermann Hesse'
     ]
+  end
 
+  def anxious
     @anxious = [
       'If a thing is worth doing, it is worth doing well. If it is worth having, it is worth waiting for. If it is worth attaining, it is worth fighting for. If it is worth experiencing, it is worth putting aside time for.~ Oscar Wilde',
       'Forces beyond your control can take away everything you possess except one thing, your freedom to choose how you will respond to the situation.~ Viktor E. Frankl',
       'Within you there is a stillness and sanctuary to which you can retreat at any time and be yourself.~ Hermann Hesse'
     ]
+  end
 
+  def creative
     @creative = [
       'The quieter we become, the more we can hear.~ Rumi',
       'You shall create beauty not to excite the senses but to give sustenance to the soul.~ Gabriela Mistral',
       'In life learn art, in the artwork learn life. If you see the one correctly you see the other also.~ Friedrich Holderlin'
     ]
+  end
 
+  def angry
     @angry = [
       'Whoever is a complete person does not need to be an authority.~ Max Stirner',
       'Life is a sum of all your choices". So, what are you doing today? .~ Albert Camus',
       'Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom.~ Viktor E. Frankl'
     ]
+  end
 
+  def in_love
     @in_love = [
       'Love is the kiss in the quiet nest while the leaves are trembling, mirrored in the water.~ Federico Garcia Lorca',
       'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.~ Lao Tzu',
       'Beauty is simply reality seen with the eyes of love.~ Rabindranath Tagore'
     ]
-    # rubocop:enable Layout/LineLength
   end
+  # rubocop:enable Layout/LineLength
 
   def random_book(input)
     index = rand(0..14)
@@ -261,4 +298,4 @@ class Random
   end
 end
 
-# rubocop:enable Metrics/ClassLength, Metrics/MethodLength
+# rubocop:enable Metrics/ClassLength
