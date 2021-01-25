@@ -49,7 +49,7 @@ To get a local copy up and running follow these simple steps.
 - From within the directory of the project, type `fritz` to run the exectuable file and hit Enter
 
 #### Add the token to your local repository
-- Open a terminal and from within the cloned repository, type touch `.token.yml`
+- Open a terminal and from within the cloned repository, type `touch .token.yml`
 - Using the text editor of your choice, paste the following content inside the created file:
 `telegram_bot_token: 1421884274:AAE20q-0ohSKN8h2PNYOblp3C8CLYTXzwzA`
 
