@@ -1,6 +1,6 @@
 # rubocop:disable Metrics/BlockLength
 
-require 'telegram/bot'
+require 'telegram_bot'
 
 require_relative '../lib/app_configurator'
 require_relative '../lib/reply_keyboards'
