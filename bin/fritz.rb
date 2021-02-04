@@ -1,5 +1,3 @@
-#!/usr/bin/env ruby
-
 # rubocop:disable Metrics/BlockLength
 
 require 'telegram/bot'
