@@ -9,12 +9,11 @@ require_relative '../lib/reply_keyboards'
 require_relative '../lib/messages'
 require_relative '../lib/random'
 
-config = AppConfigurator.new
 msg = Messages.new
 keyboard = ReplyKeyboards.new
 random = Random.new
 
-token = config.token
+token = ENV['TOKEN']
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
