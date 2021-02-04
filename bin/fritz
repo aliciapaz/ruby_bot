@@ -13,7 +13,7 @@ msg = Messages.new
 keyboard = ReplyKeyboards.new
 random = Random.new
 
-token = ENV['TOKEN']
+token = '1421884274:AAE20q-0ohSKN8h2PNYOblp3C8CLYTXzwzA'
 
 Telegram::Bot::Client.run(token) do |bot|
   bot.listen do |message|
