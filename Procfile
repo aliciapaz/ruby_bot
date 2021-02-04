@@ -1,1 +1,1 @@
-worker: bundle exec ruby fritz
+worker: bundle exec ruby bin/fritz
